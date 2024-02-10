@@ -23,7 +23,7 @@ for i in contents:
     title_list.append(i.get_text().strip())
 
 
-data={'Title':title,'Link':links,'Category':category}
+data={'Title':title_list,'Link':links_list,'Category':category_list}
 df=pd.DataFrame(data)
 df.to_csv('bbc_news_scraping.csv')
 
